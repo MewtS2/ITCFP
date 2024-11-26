@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Peralta - Profile</title>
+    <style>
+        body {
+            font-family: Bebas Neue, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-position: center;
+            color: black;
+            text-align: center;
+        }
+        h1, h3, h4 {
+            color: black;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: black;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .button-container {
+            margin: 20px auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+        section {
+            height: auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-position: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow-y: auto;
+            width: 80%;
+            max-width: 1000px;
+            margin-bottom: 30px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        section h2 {
+            color: black;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .close-btn {
+            align-self: flex-end;
+            margin-top: 10px;
+            padding: 5px 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .close-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>ASHLEY JAMES "AJ" R. PERALTA</h1>
+    <img src="aj.png" alt="Ashley James 'AJ' Peralta" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; margin-top: 20px;">
+    
+    <h3>University: University of the East - Caloocan</h3>
+    <h3>Course: Bachelor of Science in Information Technology</h3>
+
+    <h4>Social Links:</h4>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/MewtS24" target="_blank">
+                <img src="Fb.png" alt="Facebook"> facebook.com/MewtS24
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/mewts__/" target="_blank">
+                <img src="Ig.png" alt="Instagram"> instagram.com/mewts__
+            </a>
+        </li>
+        <li>
+            <a href="https://www.twitch.tv/meutantb" target="_blank">
+                <img src="TWTCH.png" alt="Twitch"> twitch.tv/meutantb
+            </a>
+        </li>
+        <li>
+            <img src="Dc.png" alt="Discord"> mewts2003
+        </li>
+    </ul>
+
+    <div class="button-container">
+        <button class="btn" onclick="toggleSection('achievements')">Achievements</button>
+        <button class="btn" onclick="toggleSection('skills')">Skills</button>
+        <button class="btn" onclick="toggleSection('projects')">Projects</button>
+        <button class="btn" onclick="toggleSection('hobbies')">Hobbies/Interests</button>
+    </div>
+
+    <div class="section-container">
+        <section id="achievements">
+            <h2>Achievements:</h2>
+            <h3><b>ACADEMICS:</b></h3>
+            <ul>
+                <li>SHS With Honors 2019-2020</li>
+            </ul>
+            <h3><b>SPORTS:</b></h3>
+            <ul>
+                <li>3x SMBL Champion</li>
+                <li>3x Mythical 5 (SMBL)</li>    
+                <li>1x Mythical 5 (High School)</li>
+            </ul>
+            <h3><b>BUSINESS:</b></h3>  
+            <ul>
+                <li>1 Branch of Lugaw Pilipinas</li>
+                <li>2024 Golden Grab Awards: Operational Awards - Food: Best Availability</li>
+            </ul>
+            <h3><b>OTHERS:</b></h3>  
+            <ul>
+                <li>Vice President of Youth Organization - St. Margaret Deca Homes</li>
+            </ul>
+            <button class="close-btn" onclick="closeSection('achievements')">Close</button>
+        </section>
+
+        <section id="skills">
+            <h2>Skills:</h2>
+            <ul>
+                <li>Leadership and Teamwork</li>
+                <li>Discipline and Physical Fitness</li>
+                <li>High Self-Esteem and Social Engagement</li>
+                <li>Organizational and Staff Management Skills</li>
+                <li>Barista Skills and Beverage Preparation</li>
+                <li>Interpersonal Communication and Customer Service</li>
+            </ul>
+            <button class="close-btn" onclick="closeSection('skills')">Close</button>
+        </section>
+
+        <section id="projects">
+            <h2>Projects:</h2>
+            <ul>
+                <li>Open another branch of Lugaw Pilipinas</li>
+                <li>Develop a POS system for both Lugaw Pilipinas and Omoide Cafe</li>
+                <li>Work as a Starbucks barista</li>
+                <li>Upgrade my PC to a high-performance streaming setup</li>
+                <li>Expand my cooking skills by learning new recipes</li>
+                <li>Introduce additional menu items for our business</li>    
+            </ul>
+            <button class="close-btn" onclick="closeSection('projects')">Close</button>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies/Interests:</h2>
+            <ul>
+                <li>Basketball</li>
+                <li>Gaming (Valorant, NBA2K, Spiderman and Many more)</li>
+                <li>Crafting various coffee and latte beverages</li>
+                <li>Creating marketing strategy content on TikTok</li>
+                <li>Outdoor activities such as camping, hiking, and fishing</li>
+                <li>Traveling and experiencing new cultures</li>
+            </ul>
+            <button class="close-btn" onclick="closeSection('hobbies')">Close</button>
+        </section>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const allSections = document.querySelectorAll("section");
+
+            if (section.classList.contains('active')) {
+                section.classList.remove('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                allSections.forEach(function (sec) {
+                    sec.classList.remove('active');
+                });
+                section.classList.add('active');
+                section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function closeSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.remove('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
