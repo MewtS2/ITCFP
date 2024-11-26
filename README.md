@@ -5,5 +5,5 @@ This is the portfolio of Ashley James "AJ" Peralta, showcasing my academic achie
 ## Technologies Used:
 - HTML
 
-## GitHub Repository: [Link to GitHub Repo]
+## GitHub Repository: (https://github.com/MewtS2/ITCFP)
 ## Live Website: [Link to Live Website]
